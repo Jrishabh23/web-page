@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assests/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="assests/script.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="form-header">
+          <h1 class="form-title">Register Today</h1>
+          <div class="form-description">Fill in the data below</div>
+        </div>
+        <form method="post" action="" id="register-form">
+          <div class="form-group">
+            <div class="register-label">
+              <label for="name" class="name" id="name"></label>
+            </div>
+            <div class="input-element">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Full Name"
+              />
+            </div>
+            <span class="error name-error"></span>
+          </div>
+          <div class="form-group">
+            <div class="register-label">
+              <label for="email" id="email"></label>
+            </div>
+            <div class="input-element">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <span class="error email-error"></span>
+          </div>
+          <div class="form-group">
+            <div class="register-label">
+              <label for="position" id="position"></label>
+            </div>
+            <div class="input-element">
+              <select
+                name="position"
+                placeholder="Position"
+                class="form-control"
+              >
+                <option value="">Position</option>
+                <option value="manager">Manager</option>
+                <option value="leader">Leader</option>
+              </select>
+            </div>
+            <span class="error position-error"></span>
+          </div>
+          <div class="form-group">
+            <div class="register-label">
+              <label for="password" id="password"></label>
+            </div>
+            <div class="input-element">
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <span class="error password-error"></span>
+          </div>
+          <div class="form-group">
+            <div class="register-label">
+              <label for="confirm_password" id="confirm_password"></label>
+            </div>
+            <div class="input-element">
+              <input
+                type="password"
+                name="confirm_password"
+                class="form-control"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <span class="error confirm_password-error"></span>
+          </div>
+          <div class="form-group gender-list">
+            <div class="list">
+              <label for="gender" id="gender">Gender: </label>
+              <ul>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  class="form-control"
+                  checked
+                />
+                <label class="gender-label male active">Male</label>
+              </ul>
+              <ul>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  class="form-control"
+                />
+                <label class="gender-label female">Female</label>
+              </ul>
+              <ul>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="other"
+                  class="form-control"
+                />
+                <label class="gender-label other">Other</label>
+              </ul>
+            </div>
+            <span class="error gender-error"></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="condition"
+              class="form-control"
+            />
+            <label class="checkbox-lable">
+              I confirm that all data are correct</label
+            >
+            <span class="error condition-error"></span>
+          </div>
+          <div class="form-group">
+            <button type="button" class="button pull-right">Register</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
